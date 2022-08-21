@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simulacion de sistemas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+   <main>
+       <header>
+           <h1>
+               <span>Simulacion de sistemas</span>
+                <h2>Hotel de un aeropuerto</h2>
+           </h1>
+           <p>
+            El hotel de un Aeropuerto tiene 100 habitaciones. En una noche dada se reciben hasta 105 reservaciones debido a la posibilidad de que no todos se presenten. Los registros indican que el número de reservaciones diarias se distribuye uniformemente en el intervalo de enteros de 96 a 105. Esto es, cada número entero tiene una probabilidad de ocurrir de 0.1.
+           </p>
+           <p>Los clientes que no llegan se representan por la siguiente distribución:</p>
+           <img src="./distribucionDeInasistencias.png" alt="">
+           <p>Elabore un modelo de simulación para determinar el número esperado de habitaciones.</p>
+       </header>
+   </main>
+   <section id="programa">
+       <h2>Simulacion</h2>
+       <p>Este programa recibe como parametro de entrada:</p>
+       <ul>
+           <li>n = Numero de dias.</li>
+       </ul>
+       <p>Cuando se especifica el periodo de la simulacion, se podrá tener obtener datos frecuenciales de los distintos eventos que se den.</p>
+
+       <form id="action">
+           <input id="ciclo" type="number" placeholder="n = ?">
+           <button id="boton-simular" type="button">Simular</button>
+       </form>
+   </section>
+
+   <section id="tableGeneral" class="tablaEstilo">
+       <h2>Tabla general simulacion</h2>
+       
+       <table id="encabezado">
+        <thead>
+        <tr class="table100-head">
+        <th class="column1">Dia</th>
+        <th class="column2">Reservaciones</th>
+        <th class="column3">Inasistencias</th>
+        <th class="column4">Habitaciones</th>
+        </tr>
+        </thead>
+        </table>
+
+        <div id="scrolll" class="scrholl">
+        <table id="cuerpo-tabla" class="widthm10">
+            <tbody>
+                <tr>
+                    <td class="column1">1</td>
+                    <td class="column2">2</td>
+                    <td class="column3">3</td>
+                    <td class="column4">4</td>
+                </tr>
+            </tbody>
+        </table>
+            </div>
+        
+
+   </section>
+
+   <section id="tablaReservaciones" class="tablaEstilo">
+    <h2>Tabla frecuencia Reservaciones</h2>
+    
+    <table id="encabezado">
+     <thead>
+     <tr class="table100-head">
+     <th class="column1-r">Reservaciones</th>
+     <th class="column2-r">Cantidad</th>
+     <th class="column3-r">F</th>
+     <th class="column4-r">%</th>
+     </tr>
+     </thead>
+     </table>
+
+     <div id="scrolll" class="scrholl">
+     <table id="cuerpo-tabla" class="widthm10">
+         <tbody>
+             <tr>
+                 <td class="column1-r">1</td>
+                 <td class="column2-r">2</td>
+                 <td class="column3-r">3</td>
+                 <td class="column4-r">4</td>
+             </tr>
+         </tbody>
+     </table>
+         </div>
+</section>
+
+<section id="tablaInasistencias" class="tablaEstilo">
+    <h2>Tabla frecuencia Inasistenias</h2>
+    
+    <table id="encabezado">
+     <thead>
+     <tr class="table100-head">
+     <th class="column1-r">Inasistencias</th>
+     <th class="column2-r">Cantidad</th>
+     <th class="column3-r">F</th>
+     <th class="column4-r">%</th>
+     </tr>
+     </thead>
+     </table>
+
+     <div id="scrolll" class="scrholl">
+     <table id="cuerpo-tabla" class="widthm10">
+         <tbody>
+             <tr>
+                 <td class="column1-r">1</td>
+                 <td class="column2-r">2</td>
+                 <td class="column3-r">3</td>
+                 <td class="column4-r">4</td>
+             </tr>
+         </tbody>
+     </table>
+         </div>
+</section>
+
+<section id="tablaHabitaciones" class="tablaEstilo">
+    <h2>Tabla frecuencia Habitaciones</h2>
+    
+    <table id="encabezado">
+     <thead>
+     <tr class="table100-head">
+     <th class="column1-r">Habitaciones</th>
+     <th class="column2-r">Cantidad</th>
+     <th class="column3-r">F</th>
+     <th class="column4-r">%</th>
+     </tr>
+     </thead>
+     </table>
+
+     <div id="scrolll" class="scrholl">
+     <table id="cuerpo-tabla" class="widthm10">
+         <tbody>
+             <tr>
+                 <td class="column1-r">1</td>
+                 <td class="column2-r">2</td>
+                 <td class="column3-r">3</td>
+                 <td class="column4-r">4</td>
+             </tr>
+         </tbody>
+     </table>
+         </div>
+</section>
+
+<footer>
+    <div id="asignatura">
+        <h4>
+            <strong><span class="azuloscuro">Asignatura:</span> 337 Simulación de sistemas</strong>
+         </h4>
+         <h4>
+             <strong><span class="azuloscuro">Tutora:</span> Mari Carmen Ing New</strong>
+          </h4>
+    </div>
+    <div id="asignatura">
+     <h4>
+         <strong><span class="azuloscuro">Alumno:</span> Samuel Rodríguez V.27240851 
+             <a href="https://github.com/samuelpklm"><img src="./github.svg" alt=""></a>
+         </strong>
+      </h4>
+      <!-- <h4>
+          <strong>Tutora: Mari carmen Villegas</strong>
+       </h4> -->
+ </div>
+ </footer>
+   
+
+
+<script src='./main.js'></script>
+</body>
+</html>
