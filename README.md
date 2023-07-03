@@ -36,6 +36,7 @@ Users should be able to:
 
 - Solution URL: [Ver solucion](https://github.com/samuelpklm/samuelpklm.github.io-Simulacion_de_sistemas_337)
 - Live Site URL: [Ver Pagina](https://samuelpklm.github.io/samuelpklm.github.io-Simulacion_de_sistemas_337/)
+- Trabajo URL: [Ver pdf](https://drive.google.com/file/d/1Al-Va2uTMJMF6QpYk6GrzecsKOSfOjWL/view?usp=drive_link)
 
 ## My process
 
